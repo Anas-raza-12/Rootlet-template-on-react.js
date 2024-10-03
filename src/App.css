@@ -1,0 +1,288 @@
+a {
+  text-decoration: none !important;
+  color: #444444;
+}
+
+.white-bg {
+  background-color: #fff !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+/* ------------------------NAVBER style------------------------ */
+.navbar-container {
+  width: 100%;
+  background: #fff;
+  color: #000;
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  z-index: 20;
+}
+
+.navbar-container > .main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 2vh auto;
+}
+
+.navbar-container > .main-nav > .logo img {
+  width: 120px;
+}
+
+.menu-link {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-container > .main-nav > .menu-link > span > a {
+  display: inline-block;
+  position: relative;
+  color: black;
+  text-decoration: none;
+  padding: 5px auto;
+}
+
+.navbar-container > .main-nav > .menu-link > span > a::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 0.2em;
+  bottom: -5px;
+  left: -5px;
+  background: currentcolor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar-container > .main-nav > .menu-link > span > a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.menu-link span a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.menu-link span a:hover {
+  color: #275ee8;
+  background-color: transparent;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.number > h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+  margin-right: 45px;
+}
+
+.number > p > a {
+  color: #275ee8;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 990px) {
+  nav .dropdown-item {
+    padding: 3vh 1vw;
+  }
+
+  .navbar-container {
+    height: 07vh;
+  }
+
+  .menu-link {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    width: 100%;
+    background: #333;
+    padding: 1rem;
+  }
+
+  .menu-link .dropdown-menu .dropdown-item {
+    color: #000;
+  }
+
+  .menu-link .dropdown-menu .dropdown-item:hover {
+    color: #275ee8;
+  }
+
+  .menu-link.open {
+    display: flex;
+  }
+
+  .menu-link span a {
+    color: #fff;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .number {
+    display: none;
+  }
+
+  .dropdown-menu a {
+    padding: 0.5vh 1vw;
+    font-weight: 600 !important;
+    width: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    height: 12vh;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .menu-link {
+    top: 12vh;
+  }
+
+  .menu-link span {
+    padding: 0.5rem 0;
+  }
+}
+
+.dropdown-menu > .dropdown-item {
+  padding: 1vh 0vw;
+  font-weight: 600 !important;
+  width: 20%;
+  position: absolute;
+}
+
+.dropdown-menu > hr {
+  margin: 5px 0vw;
+}
+
+.dropdown-menu {
+  display: none;
+  transition: display 0.5s;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.158);
+  border: none;
+  margin-top: 0.5vh;
+}
+
+.dropdown-toggle:hover .dropdown-menu {
+  display: block;
+}
+
+/* ------------------------Footer style------------------------ */
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #2c479f;
+  padding: 5vh 2vw;
+}
+
+footer > .container > .row > .col-lg-3 {
+  margin: 3vh 0vw;
+}
+
+footer > .container > .row > .col-lg-3 > ul {
+  padding: 0;
+  list-style: none;
+}
+
+footer > .container > .row > .col-lg-3 h1 {
+  color: white;
+  font-size: 19px;
+  letter-spacing: -0.5px;
+  font-weight: 800;
+}
+
+footer > .container > .row > .col-lg-3 > ul > li a {
+  padding: 1vh 0vw;
+}
+
+footer > .container > .row > .col-lg-3 i {
+  padding: 1vh 0vw;
+  font-size: 18px;
+}
+
+footer form {
+  padding: 7vh 0vw 5vh 0vw;
+}
+
+footer form > label {
+  color: white;
+  font-size: 12px;
+  padding: 0.5vh 0.5vw;
+}
+
+footer input {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 0.5vh 5vw 0.5vh 0.5vw;
+  background-color: #d6dae8;
+  margin: 1vh 0vw;
+}
+
+footer button {
+  border-radius: 7px;
+  padding: 0.5vh 1vw 0.5vh 0.5vw;
+  border: none;
+  background-color: rgb(71, 71, 71);
+  color: white;
+  font-size: 12px;
+}
+
+footer .last_line {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+footer .last_line p {
+  text-align: center;
+}
+
+@media (max-width: 440px) {
+  footer > .container > .row > .col-lg-6 {
+    text-align: center;
+
+    margin: 1vh auto;
+  }
+}
