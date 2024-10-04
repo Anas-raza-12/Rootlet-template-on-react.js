@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "aos/dist/aos.css"; // Import AOS CSS
-import AOS from "aos"; // Import AOS library
+import "aos/dist/aos.css";
+import AOS from "aos"; 
 import ClipLoader from "react-spinners/ClipLoader";
-
-import ProgressBar from "./ProgressBar"; // Ensure you have the correct path
+import bg_image from "/src/assets/image/it-bg-full.jpg";
+import ProgressBar from "./ProgressBar"; 
 
 const Home = () => {
   const skills = [
@@ -177,7 +177,7 @@ const Home = () => {
       <div className="background_image">
         <img
           className="bg-image"
-          src="/src/assets/image/it-bg-full.jpg"
+          src={bg_image}
           alt="Background"
         />
       </div>

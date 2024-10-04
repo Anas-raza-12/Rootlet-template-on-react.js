@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "/src/assets/image/logo.png"
 
 const Navber = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,8 @@ const Navber = () => {
       <nav className="main-nav container">
         <div className="logo">
           <Link to="/">
-            <img width={"20%"} src="/src/assets/image/logo.png" alt="Logo" />
+            <img width={"20%"} src={logo} alt="Logo" />
+           
           </Link>
         </div>
         <div className={`menu-link ${isOpen ? "open" : ""}`}>
