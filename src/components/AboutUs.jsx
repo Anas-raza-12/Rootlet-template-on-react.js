@@ -4,9 +4,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import ClipLoader from "react-spinners/ClipLoader";
+import costumerImg1 from "/src/assets/image/0x0.webp";
+import costumerImg2 from "/src/assets/image/download.jpeg";
+import costumerImg3 from "/src/assets/image/ceo-woman-Depositphotos_12497994_xl-2015-800w.webp";
+import costumerImg4 from "/src/assets/image/ceo-vs-cfo.webp";
+import costumerImg5 from "/src/assets/image/ceo.jpg";
+import FirstcobtainerBgImg from "/src/assets/image/puzzle.png";
+import FirstcobtainerImg1 from "/src/assets/image/it-generic-6.jpg";
 
 const AboutUs = () => {
-  // Data for the sections
+
   const About_first = [
     {
       title: "ABOUT ROOTLET SOLUTIONS",
@@ -43,32 +50,32 @@ const AboutUs = () => {
     {
       quote:
         "They provided outstanding service! To create a unique software solution for our company, their team went beyond perfection. They showed professionalism, knowledge and a dedication to quality from the first consultation to the last deployment. Extremely recommended!",
-      image: "/src/assets/image/0x0.webp",
-      ownername: " (Emily Grace)",
+      image: costumerImg1,
+      ownername: "(Emily Grace)",
     },
     {
       quote:
         "With the mobile app created by Rootlet, I couldn't be happier. The crew completed the project on schedule and under budget and they were also very responsive and detail-oriented. Their team created smooth and functioning app just as I imagined.",
-      image: "/src/assets/image/download.jpeg",
+      image:costumerImg2,
       ownername: " (Joshua David)",
     },
     {
       quote:
         "For our business, collaborating with Rootlet Solutions was revolutionary. Their proficiency in web building enabled us to revive our online presence and draw in new clients. The entire procedure was stress-free and seamless because of their active communication and attention to detail. Looking forward to further partnerships in the future!",
       image:
-        "/src/assets/image/ceo-woman-Depositphotos_12497994_xl-2015-800w.webp",
+      costumerImg3,
       ownername: " (Hannah Joy)",
     },
     {
       quote:
         "Working on a challenging software integration project with Rootlet Solutions was a great experience for me. Throughout the engagement, their team showed off their extensive technical expertise, inventiveness and problem-solving abilities, I would not think twice about working with them in the future.",
-      image: "/src/assets/image/ceo-vs-cfo.webp",
+      image: costumerImg4,
       ownername: " (Benjamin Paul)",
     },
     {
       quote:
         "Bravo to Rootlet Solutions team for excellent client service! They addressed our issues and made sure the transaction went well, they were informed and accommodating. Their dedication to client satisfaction distinguishes them and I heartily endorse their services to anybody in need of software development.",
-      image: "/src/assets/image/ceo.jpg",
+      image:costumerImg5,
       ownername: "(Christopher James)",
     },
   ];
@@ -112,17 +119,16 @@ const AboutUs = () => {
     },
   ];
 
-  // State for loading
+ 
   const [loading, setLoading] = useState(true);
-  // State for error (if needed)
+
   const [error, setError] = useState(null);
 
-  // Fetch data (if applicable)
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Simulate fetching data
-        await new Promise(resolve => setTimeout(resolve, 2000)); // Simulating a delay
+       
+        await new Promise(resolve => setTimeout(resolve, 2000));
       } catch (error) {
         setError(error.message);
       } finally {
@@ -133,7 +139,7 @@ const AboutUs = () => {
     fetchData();
   }, []);
 
-  // Counter component to increment numbers
+ 
   const Counter = ({ target, speed = 500 }) => {
     const [count, setCount] = useState(0);
     const [isInView, setIsInView] = useState(false);
@@ -209,12 +215,12 @@ const AboutUs = () => {
           >
             <img
               className="image1"
-              src="/src/assets/image/puzzle.png"
+              src={FirstcobtainerBgImg}
               alt="Puzzle"
             />
             <img
               className="image2"
-              src="/src/assets/image/it-generic-6.jpg"
+              src={FirstcobtainerImg1}
               alt="IT Generic"
             />
           </div>

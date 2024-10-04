@@ -225,7 +225,7 @@ const Contact = () => {
                 />
                 <input
                   className="col-lg-6 col-md-10 col-sm-10"
-                  type="text" name="" required
+                  type="text" name="" 
                   value={formData.subject}
                   onChange={handleChange}
                   placeholder="Subject"

@@ -4,11 +4,20 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "aos/dist/aos.css";
-import AOS from "aos"; 
+import AOS from "aos";
 import ClipLoader from "react-spinners/ClipLoader";
+import ProgressBar from "./ProgressBar";
 import bg_image from "/src/assets/image/it-bg-full.jpg";
-import ProgressBar from "./ProgressBar"; 
+import costumerImg1 from "/src/assets/image/0x0.webp";
+import costumerImg2 from "/src/assets/image/download.jpeg";
+import costumerImg3 from "/src/assets/image/ceo-woman-Depositphotos_12497994_xl-2015-800w.webp";
+import costumerImg4 from "/src/assets/image/ceo-vs-cfo.webp";
+import costumerImg5 from "/src/assets/image/ceo.jpg";
 
+import journeyImg1 from "/src/assets/image/church2-2-scaled.jpg";
+import journeyImg2 from "/src/assets/image/Sparktechbesa-scaled.jpg";
+import journeyImg3 from "/src/assets/image/church3-2-scaled.jpg";
+import journeyImg4 from "/src/assets/image/Rent-A-Property-2-scaled.jpg";
 const Home = () => {
   const skills = [
     { name: "Website Development", percentage: 92, person: "92%" },
@@ -132,33 +141,32 @@ const Home = () => {
     {
       quote:
         "They provided outstanding service! To create a unique software solution for our company, their team went beyond perfection. They showed professionalism, knowledge and a dedication to quality from the first consultation to the last deployment. Extremely recommended!",
-      image: "/src/assets/image/0x0.webp",
-      onername: " (Emily Grace)",
+      image: costumerImg1,
+      onername: "Emily Grace",
     },
     {
       quote:
         "With the mobile app created by rootlet, I couldn't be happier. The crew completed the project on schedule and under budget and they were also very responsive and detail-oriented. Their team created smooth and functioning app just as I imagined.",
-      image: "/src/assets/image/download.jpeg",
-      onername: " (Joshua David)",
+      image: costumerImg2,
+      onername: "Joshua David",
     },
     {
       quote:
         "For our business, collaborating with rootlet solutions was revolutionary. Their proficiency in web building enabled us to revive our online presence and draw in new clients. The entire procedure was stress-free and seamless because of their active communication and attention to detail. Looking forward to further partnerships in the future!",
-      image:
-        "/src/assets/image/ceo-woman-Depositphotos_12497994_xl-2015-800w.webp",
-      onername: " (Hannah Joy)",
+      image: costumerImg3,
+      onername: "Hannah Joy",
     },
     {
       quote:
         "Working on a challenging software integration project with Rootlet Solutions was a great experience for me. Throughout the engagement, their team showed off their extensive technical expertise, inventiveness and problem-solving abilities, I would not think twice about working with them in the future.",
-      image: "/src/assets/image/ceo-vs-cfo.webp",
-      onername: " (Benjamin Paul)",
+      image: costumerImg4 ,
+      onername: "Benjamin Paul",
     },
     {
       quote:
         "Bravo to Rootlet Solutions team for excellent client service! They addressed our issues and made sure the transaction went well, they were informed and accommodating. Their dedication to client satisfaction distinguishes them and I heartily endorse their services to anybody in need of software development.",
-      image: "/src/assets/image/ceo.jpg",
-      onername: "(Christopher James)",
+      image:  costumerImg5,
+      onername: "Christopher James",
     },
   ];
 
@@ -175,11 +183,7 @@ const Home = () => {
   return (
     <div className="container-fluid p-0 Home position-relative">
       <div className="background_image">
-        <img
-          className="bg-image"
-          src={bg_image}
-          alt="Background"
-        />
+        <img className="bg-image" src={bg_image} alt="Background" />
       </div>
       <div className="hero-image">
         <svg
@@ -330,6 +334,7 @@ const Home = () => {
                   <p>"{testimonial.quote}"</p>
                   <div className="d-flex">
                     <img src={testimonial.image} alt="CEO" />
+
                     <p>
                       {testimonial.ownername}
                       <br /> CEO
@@ -392,28 +397,29 @@ const Home = () => {
               <div className="col-lg-6 col-md-6 col-sm" data-aos="zoom-in">
                 <img
                   width={"100%"}
-                  src="/src/assets/image/church2-2-scaled.jpg"
+                  src={journeyImg1}
                   alt=""
                 />
               </div>
               <div className="col-lg-6 col-md-6 col-sm" data-aos="zoom-in">
                 <img
                   width={"100%"}
-                  src="/src/assets/image/Sparktechbesa-scaled.jpg"
+                  src={journeyImg2}
+               
                   alt=""
                 />
               </div>
               <div className="col-lg-6 col-md-6 col-sm" data-aos="zoom-in">
                 <img
                   width={"100%"}
-                  src="/src/assets/image/church3-2-scaled.jpg"
+                  src={journeyImg3}
                   alt=""
                 />
               </div>
               <div className="col-lg-6 col-md-6 col-sm" data-aos="zoom-in">
                 <img
                   width={"100%"}
-                  src="/src/assets/image/Rent-A-Property-2-scaled.jpg"
+                  src={journeyImg4}
                   alt=""
                 />
               </div>

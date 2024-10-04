@@ -38,7 +38,9 @@ const Navber = () => {
         </div>
         <div className={`menu-link ${isOpen ? "open" : ""}`}>
           <span>
-            <Link to="/">Home</Link>
+            <Link  className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                } to="/">Home</Link>
           </span>
           <span
             onMouseEnter={() => handleDropdownEnter("about")}

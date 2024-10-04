@@ -14,7 +14,10 @@ a {
 body {
   scroll-behavior: smooth;
 }
-
+ .active{
+  border-bottom:2px solid black !important ;
+ }
+ 
 /* ------------------------NAVBER style------------------------ */
 .navbar-container {
   width: 100%;
@@ -225,7 +228,9 @@ footer > .container > .row > .col-lg-3 > ul {
   padding: 0;
   list-style: none;
 }
-
+footer > .container > .row > .col-lg-3 > ul >li{
+  font-size: 20px;
+}
 footer > .container > .row > .col-lg-3 h1 {
   color: white;
   font-size: 19px;
@@ -239,7 +244,8 @@ footer > .container > .row > .col-lg-3 > ul > li a {
 
 footer > .container > .row > .col-lg-3 i {
   padding: 1vh 0vw;
-  font-size: 18px;
+  font-size: 22px;
+  margin: 0vh 1vw;
 }
 
 footer form {
