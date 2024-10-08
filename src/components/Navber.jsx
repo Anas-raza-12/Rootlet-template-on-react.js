@@ -94,7 +94,7 @@ const Navber = () => {
               </li>
               <hr />
               <li>
-                <Link className="dropdown-item" to="/Graphic_Design">
+                <Link className="dropdown-item" to="/Graphic_designe">
                   Graphic Designing
                 </Link>
               </li>

@@ -1,6 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ClipLoader from "react-spinners/ClipLoader";
+import AppdevImg from "/src/assets/image/app.png";
+
+import AppdevImg1 from "/src/assets/image/app1.png";
+import AppdevImg2 from "/src/assets/image/app2.png" ;
+import AppdevImg3 from "/src/assets/image/app3.png";
+import AppdevImg4 from "/src/assets/image/app4.png";
+import AppdevImg5 from "/src/assets/image/app5.png";
+import AppdevImg6 from "/src/assets/image/app6.png";
+import AppdevImg7 from "/src/assets/image/app7.png";
+import AppdevImg8 from "/src/assets/image/app8.png";
 
 const App_Development = () => {
   const [loading, setLoading] = useState(true);
@@ -11,7 +21,7 @@ const App_Development = () => {
       try {
         
         await new Promise(resolve => setTimeout(resolve, 2000));
-     
+        
         setError(null);
       } catch (error) {
         setError("An error occurred while fetching data. Please try again.");
@@ -41,7 +51,7 @@ const App_Development = () => {
 
   return (
     <div className="container-fluid AppDev p-0" style={{ marginTop: "12vh" }}>
-      <img width={"100%"} src="/src/assets/image/app.png" alt="" />
+      <img width={"100%"} src={AppdevImg} alt="" />
       <div className="container container-1" data-aos="fade-up">
         <h1>APP DEVELOPMENT</h1>
         <p>
@@ -74,10 +84,10 @@ const App_Development = () => {
             </p>
           </div>
           <div className="col-lg-5 col-md-6 col-sm-12">
-            <img src="/src/assets/image/app1.png" alt="" data-aos="fade-right" />
+            <img src={AppdevImg1} alt="" data-aos="fade-right" />
           </div>
           <div className="col-lg-5 col-md-6 col-sm-12">
-            <img src="/src/assets/image/app2.png" alt="" data-aos="fade-right" />
+            <img src={AppdevImg2} alt="" data-aos="fade-right" />
           </div> 
           <div className="col-lg-7 col-md-6 col-sm-12" data-aos="fade-up">
             <h1>Design</h1>
@@ -103,10 +113,10 @@ const App_Development = () => {
             </p>
           </div>
           <div className="col-lg-5 col-md-6 col-sm-12">
-            <img src="/src/assets/image/app3.png" alt="" data-aos="fade-right" />
+            <img src={AppdevImg3} alt="" data-aos="fade-right" />
           </div>
           <div className="col-lg-5 col-md-6 col-sm-12">
-            <img src="/src/assets/image/app4.png" alt="" data-aos="fade-right" />
+            <img src={AppdevImg4} alt="" data-aos="fade-right" />
           </div>
           <div className="col-lg-7 col-md-6 col-sm-12" data-aos="fade-up">
             <h1>Testing</h1>
@@ -132,7 +142,7 @@ const App_Development = () => {
             </p>
           </div>
           <div className="col-lg-5 col-md-6 col-sm-12">
-            <img src="/src/assets/image/app5.png" alt="" data-aos="fade-right"/>
+            <img src={AppdevImg5} alt="" data-aos="fade-right"/>
           </div>
           <div className="col-lg-12" data-aos="zoom-in">
             <h1>WHY CHOOSE ROOTLET FOR APP DEVELOPMENT</h1>
@@ -142,7 +152,7 @@ const App_Development = () => {
             </p>
           </div>
           <div className="col-lg-5 col-md-6 col-sm-12">
-            <img src="/src/assets/image/app6.png" alt="" data-aos="fade-right" />
+            <img src={AppdevImg6} alt="" data-aos="fade-right" />
           </div>
           <div className="col-lg-7 col-md-6 col-sm-12" data-aos="fade-up">
             <h1>Expertise</h1>
@@ -164,10 +174,10 @@ const App_Development = () => {
             </p>
           </div>
           <div className="col-lg-5 col-md-6 col-sm-12">
-            <img src="/src/assets/image/app7.png" alt=""  data-aos="fade-right" />
+            <img src={AppdevImg7} alt=""  data-aos="fade-right" />
           </div>
           <div className="col-lg-5 col-md-6 col-sm-12">
-            <img src="/src/assets/image/app8.png" alt="" data-aos="fade-right" />
+            <img src={AppdevImg8} alt="" data-aos="fade-right" />
           </div>
           <div className="col-lg-7 col-md-6 col-sm-12" data-aos="fade-up">
             <h1>Tailored Solutions</h1>
