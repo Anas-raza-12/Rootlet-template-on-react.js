@@ -2,6 +2,18 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ClipLoader from "react-spinners/ClipLoader";
 
+
+
+
+import serviceImage from "/src/assets/image/servvice.png";
+import webdevImage from "/src/assets/image/dev6.png";
+import mobdevImage from "/src/assets/image/mob.png";
+import graphicImage from "/src/assets/image/graphic.png";
+import uiImage from "/src/assets/image/ui.png";
+import searchImage from "/src/assets/image/search.png";
+import contentImage from "/src/assets/image/content.png";
+import videoImage from "/src/assets/image/video1.png";
+import digitalImage from "/src/assets/image/diigtal.png";
 const Services = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -10,7 +22,7 @@ const Services = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Simulate a delay for data fetching
+ 
         await new Promise((resolve) => setTimeout(resolve, 2000));
         setError(null);
       } catch (error) {
@@ -68,7 +80,7 @@ const Services = () => {
       style={{ marginTop: "13vh" }}
       className="Services container-fluid p-0"
     >
-      <img width={"100%"} src="/src/assets/image/servvice.png" alt="Service Banner" />
+      <img width={"100%"} src={serviceImage} alt="Service Banner" />
       <div className="container">
         <h1 className="text-center" data-aos="fade-down">OUR SERVICES</h1>
         <p className="text-center" data-aos="fade-down">
@@ -112,10 +124,10 @@ const Services = () => {
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/dev6.png" alt="Web Development" data-aos="fade-down"/>
+            <img src={webdevImage} alt="Web Development" data-aos="fade-down"/>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/mob.png" alt="Mobile Development" data-aos="fade-down" />
+            <img src={mobdevImage} alt="Mobile Development" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div>
@@ -161,10 +173,10 @@ const Services = () => {
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/graphic.png" alt="Graphic Designing" data-aos="fade-down" />
+            <img src={graphicImage} alt="Graphic Designing" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/ui.png" alt="UI/UX Designing"  data-aos="fade-down"/>
+            <img src={uiImage} alt="UI/UX Designing"  data-aos="fade-down"/>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div>
@@ -203,10 +215,10 @@ const Services = () => {
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/search.png" alt="SEO Services" data-aos="fade-down" />
+            <img src={searchImage} alt="SEO Services" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/content.png" alt="Content Writing" data-aos="fade-down" />
+            <img src={contentImage} alt="Content Writing" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div>
@@ -251,10 +263,10 @@ const Services = () => {
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/video1.png" alt="Video Animation" data-aos="fade-down"/>
+            <img src={videoImage} alt="Video Animation" data-aos="fade-down"/>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/diigtal.png" alt="Digital Marketing" data-aos="fade-down"/>
+            <img src={digitalImage} alt="Digital Marketing" data-aos="fade-down"/>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div>

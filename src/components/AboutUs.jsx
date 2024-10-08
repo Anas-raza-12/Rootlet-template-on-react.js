@@ -11,7 +11,9 @@ import costumerImg4 from "/src/assets/image/ceo-vs-cfo.webp";
 import costumerImg5 from "/src/assets/image/ceo.jpg";
 import FirstcobtainerBgImg from "/src/assets/image/puzzle.png";
 import FirstcobtainerImg1 from "/src/assets/image/it-generic-6.jpg";
-
+import contentImg1 from "/src/assets/image/pic8.jpg";
+import contentImg2 from "/src/assets/image/pic9.jpg";
+import contentImg3 from "/src/assets/image/pic10.jpg";
 const AboutUs = () => {
 
   const About_first = [
@@ -98,21 +100,21 @@ const AboutUs = () => {
   const contentArray = [
     {
       anima: "fade-up-right",
-      imgSrc: "/src/assets/image/pic8.jpg",
+      imgSrc: contentImg1,
       title: "WHO WE ARE",
       description:
         "We are a team of passionate and dedicated professionals who are committed to helping our clients succeed. We believe that everyone deserves to have a strong online presence, and we work hard to make that happen for our clients. We are always looking for new and innovative ways to help our clients reach their marketing goals.",
     },
     {
       anima: "fade-up",
-      imgSrc: "/src/assets/image/pic9.jpg",
+      imgSrc: contentImg2,
       title: "MISSION STATEMENT",
       description:
         "At Rootlet Solutions, we aim to enable companies by providing creative digital solutions that promote expansion, effectiveness, and prosperity. We develop customized software solutions that solve difficult problems, optimize processes, and create enduring partnerships in an effort to surpass customer expectations. We are dedicated to excellence, innovation, and honesty. As a dependable partner for businesses looking to prosper in the digital era, we strive to remain at the forefront of technological advancements and uphold a culture of constant learning and development.",
     },
     {
       anima: "fade-up-left",
-      imgSrc: "/src/assets/image/pic10.jpg",
+      imgSrc: contentImg3 ,
       title: "OUR JOURNEY OF SUCCESS",
       description:
         "Our strategy has always been centered on innovation. We were aware that we had to push the envelope of what was feasible in order to stay ahead in a field that was changing quickly. For this reason, we made significant investments in research and development and are always investigating new technologies, approaches and best practices in order to provide solutions that are not just state of the art but also useful, scalable and long-lasting.",
