@@ -1,15 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import DigitalbgImg from "/src/assets/image/digital.png";
+
+import DigitalImg1 from "/src/assets/image/digi1.png";
+import DigitalImg2 from "/src/assets/image/digi2.png";
+import DigitalImg3 from "/src/assets/image/digi3.png";
+import DigitalImg4 from "/src/assets/image/digi4.png";
+import DigitalImg5 from "/src/assets/image/digi5.png";
+
 const Digital_marketing = () => {
   return (
     <div
       style={{ marginTop: "13vh " }}
       className="container-fluid p-0 Digital_marketing"
     >
-      <img width={"100%"} src="/src/assets/image/digital.PNG" alt="" />
+      <img width={"100%"} src={DigitalbgImg} alt="" />
       <div className="container">
-        <h1 data-aos="fade-up" className="text-center">Why Choose Rootlet Solutions For Your Digital Marketing Agency?</h1>
+        <h1 data-aos="fade-up" className="text-center">
+          Why Choose Rootlet Solutions For Your Digital Marketing Agency?
+        </h1>
         <p data-aos="fade-up" className="text-center">
           Rootlet Solutions is a comprehensive digital marketing agency. We have
           been serving clients across industries since 2005, offering a wide
@@ -24,7 +34,9 @@ const Digital_marketing = () => {
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div>
-              <h1 data-aos="fade-up">Meet our team of digital marketing experts</h1>
+              <h1 data-aos="fade-up">
+                Meet our team of digital marketing experts
+              </h1>
               <p data-aos="fade-up">
                 Having a website is not enough for the success of your business
                 if it fails to be recognized by search engines. To ensure that
@@ -38,11 +50,13 @@ const Digital_marketing = () => {
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             {" "}
-            <img src="/src/assets/image/digi1.png" alt=""   data-aos="fade-down"/>
+            <img src={DigitalImg1} alt="" data-aos="fade-down" />
           </div>
-          <h1 data-aos="zoom-in" className="text-center">Experience Proven Results</h1>
+          <h1 data-aos="zoom-in" className="text-center">
+            Experience Proven Results
+          </h1>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/digi2.png" alt="" data-aos="fade-down" />
+            <img src={DigitalImg2} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div>
@@ -72,14 +86,16 @@ const Digital_marketing = () => {
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/digi3.png" alt="" data-aos="fade-down"/>
+            <img src={DigitalImg3} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/digi4.png" alt="" data-aos="fade-down"/>
+            <img src={DigitalImg4} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div>
-              <h1 data-aos="fade-up">The Ideal assistance for Successful Internet Marketing</h1>
+              <h1 data-aos="fade-up">
+                The Ideal assistance for Successful Internet Marketing
+              </h1>
               <p data-aos="fade-up">
                 {" "}
                 Selecting Rootlet for digital marketing has several benefits
@@ -100,10 +116,12 @@ const Digital_marketing = () => {
               </p>
             </div>
           </div>
-          <h1 data-aos="zoom-in" className="text-center">Our Digital Marketing Expertise</h1>
+          <h1 data-aos="zoom-in" className="text-center">
+            Our Digital Marketing Expertise
+          </h1>
           <div className="col-lg-12" data-aos="fade-down">
             <div>
-              <h3 >SEARCH ENGINE OPTIMIZATION – SEO</h3>
+              <h3>SEARCH ENGINE OPTIMIZATION – SEO</h3>
               <p>
                 We can help you achieve high rankings in the major search
                 engines through careful keyword research and white hat
@@ -129,27 +147,53 @@ const Digital_marketing = () => {
             </div>
             <div>
               <h3>VIDEO PRODUCTION</h3>
-              <p>There's no better way to get your message across than through video. Engage your audience by telling your story and sharing your mission.</p>
+              <p>
+                There's no better way to get your message across than through
+                video. Engage your audience by telling your story and sharing
+                your mission.
+              </p>
             </div>
             <div>
               <h3>CONTENT WRITING</h3>
-              <p>Our content writers know Search Engine Optimization and create great marketing copy that's informative and compelling, pushing your business objectives.</p>
+              <p>
+                Our content writers know Search Engine Optimization and create
+                great marketing copy that's informative and compelling, pushing
+                your business objectives.
+              </p>
             </div>
-            <div><h3>REPUTATION MANAGEMENT</h3>
-            <p>Your reputation is everything. Our team of experts can help protect and enhance your online reputation for tangible, long-term results.</p></div>
+            <div>
+              <h3>REPUTATION MANAGEMENT</h3>
+              <p>
+                Your reputation is everything. Our team of experts can help
+                protect and enhance your online reputation for tangible,
+                long-term results.
+              </p>
+            </div>
             <div>
               <h3>CONVERSION OPTIMIZATION</h3>
-              <p>Turn more site visitors into customers! Our experts utilize the latest Conversion Optimization techniques to increase the percentage of passive website visitors into active users.</p>
+              <p>
+                Turn more site visitors into customers! Our experts utilize the
+                latest Conversion Optimization techniques to increase the
+                percentage of passive website visitors into active users.
+              </p>
             </div>
-            <div><h3>AMAZON MARKETING</h3>
-            <p>Getting found on Amazon is not easy! Competition is fierce and thick. We'll help your products get found in this massive marketplace.</p></div>
+            <div>
+              <h3>AMAZON MARKETING</h3>
+              <p>
+                Getting found on Amazon is not easy! Competition is fierce and
+                thick. We'll help your products get found in this massive
+                marketplace.
+              </p>
+            </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/digi5.png" alt="" data-aos="fade-down" />
+            <img src={DigitalImg5} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div>
-              <h1 data-aos="fade-up">Here's what sets us apart and drives our value</h1>
+              <h1 data-aos="fade-up">
+                Here's what sets us apart and drives our value
+              </h1>
               <p data-aos="fade-up">
                 Our dedication to the work is fueled by our genuine concern for
                 one another. We place our trust in our collective knowledge,
@@ -168,7 +212,9 @@ const Digital_marketing = () => {
           <div className="row">
             <div className="col-lg-6 col-md-7 ">
               <h2 data-aos="fade-up">Let's Get in Touch</h2>
-              <h1 data-aos="fade-up">LET'S TALK ABOUT YOUR BUSINESS IT SERVICES NEEDS</h1>
+              <h1 data-aos="fade-up">
+                LET'S TALK ABOUT YOUR BUSINESS IT SERVICES NEEDS
+              </h1>
               <p data-aos="fade-up">Feel free to reach out to us.</p>
             </div>
             <div className="col-lg-6 col-md-5">
