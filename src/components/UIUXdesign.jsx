@@ -1,10 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import uiuxbgImg from "/src/assets/image/uiux.png";
 
+import uiuxImg1 from "/src/assets/image/ui1.png";
+import uiuxImg2 from "/src/assets/image/ui2.png";
+import uiuxImg3 from "/src/assets/image/ui3.png";
+import uiuxImg4 from "/src/assets/image/ui4.png";
 const UIUX_Design = () => {
   return (
     <div className="UiuxDesign container-fluid p-0">
-      <img width={"100%"} src="/src/assets/image/uiux.PNG" alt="" />
+      <img width={"100%"} src={uiuxbgImg} alt="" />
       <div className="container">
         <h1 data-aos="fade-up">UI/UX DESIGNING</h1>
         <p data-aos="fade-up">
@@ -38,11 +43,11 @@ const UIUX_Design = () => {
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/ui1.png" alt="" data-aos="fade-down " />
+            <img src={uiuxImg1} alt="" data-aos="fade-down " />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             {" "}
-            <img src="/src/assets/image/ui2.png" alt="" data-aos="fade-down" />
+            <img src={uiuxImg2} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div data-aos="fade-up">
@@ -87,11 +92,11 @@ const UIUX_Design = () => {
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             {" "}
-            <img src="/src/assets/image/ui3.png" alt="" data-aos="fade-down" />
+            <img src={uiuxImg3} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             {" "}
-            <img src="/src/assets/image/ui4.png" alt="" data-aos="fade-down" />
+            <img src={uiuxImg4} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div data-aos="fade-up">

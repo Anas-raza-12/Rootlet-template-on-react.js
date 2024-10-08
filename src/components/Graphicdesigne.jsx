@@ -1,10 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import graphImg from  "/src/assets/image/graph.png";
 
+import graphImg1 from  "/src/assets/image/grap1.png";
+import graphImg2 from  "/src/assets/image/graph2.png";
+import graphImg3 from  "/src/assets/image/graph3.png";
+import graphImg4 from  "/src/assets/image/graph4.png";
 const Graphic_designe = () => {
   return (
     <div className="graphic">
-      <img width={"100%"} src="/src/assets/image/graph.PNG" alt="" />
+      <img width={"100%"} src={graphImg} alt="" />
       <div className="container">
         <h1  data-aos="fade-down">GRAPHIC DESIGNING</h1>
         <p  data-aos="fade-down">
@@ -32,7 +37,7 @@ const Graphic_designe = () => {
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 image">
-            <img src="/src/assets/image/grap1.png" alt="" data-aos="fade-up" />
+            <img src={graphImg1} alt="" data-aos="fade-up" />
           </div >
           <div className="col-lg-12 col-md-9">
             <div  data-aos="zoom-in">
@@ -47,7 +52,7 @@ const Graphic_designe = () => {
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 image">
-            <img src="/src/assets/image/graph2.png" alt="" data-aos="fade-up" />
+            <img src={graphImg2} alt="" data-aos="fade-up" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div  data-aos="fade-down">
@@ -91,10 +96,10 @@ const Graphic_designe = () => {
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 image">
-            <img src="/src/assets/image/graph3.png" alt="" data-aos="fade-up"/>
+            <img src={graphImg3} alt="" data-aos="fade-up"/>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 image">
-            <img src="/src/assets/image/graph4.png" alt=""  data-aos="fade-up" />
+            <img src={graphImg4} alt=""  data-aos="fade-up" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div  data-aos="fade-down">

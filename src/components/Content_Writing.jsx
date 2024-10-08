@@ -1,13 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import ContentbgImg from "/src/assets/image/contentwrite.png"
+
+import ContentImg1 from "/src/assets/image/cont1.png";
+import ContentImg2  from "/src/assets/image/cont2.png";
+import ContentImg3  from "/src/assets/image/cont3.png";
+import ContentImg4  from "/src/assets/image/cont4.png"; 
+import ContentImg5   from"/src/assets/image/content.png";
 const Content_Writing = () => {
   return (
     <div
       style={{ marginTop: "13vh " }}
       className="container-fluid p-0 Content_Writing "
     >
-      <img width={"100%"} src="/src/assets/image/contentwrite.PNG" alt="" />
+      <img width={"100%"} src={ContentbgImg} alt="" />
       <div className="container">
         <h1 data-aos="fade-up" className="text-center">
           CONTENT WRITING
@@ -39,7 +46,7 @@ const Content_Writing = () => {
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/cont1.png" alt="" data-aos="fade-down" />
+            <img src={ContentImg1} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-12">
             <div data-aos="zoom-in">
@@ -54,7 +61,7 @@ const Content_Writing = () => {
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/cont2.png" alt="" data-aos="fade-down" />
+            <img src={ContentImg2} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div>
@@ -81,10 +88,10 @@ const Content_Writing = () => {
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/cont3.png" alt="" data-aos="fade-down" />
+            <img src={ContentImg3} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/cont4.png" alt="" data-aos="fade-down" />
+            <img src={ContentImg4} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div>
@@ -113,7 +120,7 @@ const Content_Writing = () => {
           </div>
 
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/content.png" alt="" data-aos="fade-down" />
+            <img src={ContentImg5} alt="" data-aos="fade-down" />
           </div>
         </div>
       </div>

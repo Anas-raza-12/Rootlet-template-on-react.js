@@ -5,7 +5,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 
 
 
-import serviceImage from "/src/assets/image/servvice.png";
+import serviceImage from "/src/assets/image/servicess.png";
 import webdevImage from "/src/assets/image/dev6.png";
 import mobdevImage from "/src/assets/image/mob.png";
 import graphicImage from "/src/assets/image/graphic.png";

@@ -2,6 +2,13 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ClipLoader from "react-spinners/ClipLoader";
 
+import seobgImg from "/src/assets/image/seo.png";
+
+import seoImg1 from "/src/assets/image/seo1.png";
+import seoImg2 from "/src/assets/image/seo2.png";
+import seoImg3 from "/src/assets/image/seo3.png";
+import seoImg4 from "/src/assets/image/seo4.png";
+import seoImg5 from "/src/assets/image/seo5.png";
 const SEO = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -61,7 +68,7 @@ const SEO = () => {
 
   return (
     <div style={{ marginTop: "13vh " }} className="container-fluid p-0 SEO">
-      <img width={"100%"} src="/src/assets/image/seo.PNG" alt="" />
+      <img width={"100%"} src={seobgImg } alt="" />
       <div className="container">
         <h1 data-aos="fade-up" className="text-center">
           SEARCH ENGINE OPTIMIZATION (SEO)
@@ -93,10 +100,10 @@ const SEO = () => {
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/seo1.png" alt="" data-aos="fade-down" />
+            <img src={seoImg1} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/seo2.png" alt="" data-aos="fade-down" />
+            <img src={seoImg2} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div>
@@ -132,10 +139,10 @@ const SEO = () => {
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/seo3.png" alt="" data-aos="fade-down" />
+            <img src={seoImg3} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/seo4.png" alt="" data-aos="fade-down" />
+            <img src={seoImg4} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div>
@@ -164,7 +171,7 @@ const SEO = () => {
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <img src="/src/assets/image/seo5.png" alt="" data-aos="fade-down" />
+            <img src={seoImg5} alt="" data-aos="fade-down" />
           </div>
         </div>
       </div>
