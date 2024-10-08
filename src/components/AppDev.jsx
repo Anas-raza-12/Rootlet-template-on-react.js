@@ -9,9 +9,9 @@ const App_Development = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Replace with your actual data fetching logic
+        
         await new Promise(resolve => setTimeout(resolve, 2000));
-        // Simulate successful data fetching by setting error to null
+     
         setError(null);
       } catch (error) {
         setError("An error occurred while fetching data. Please try again.");

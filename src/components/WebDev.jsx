@@ -1,10 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import webdevImg from "/src/assets/image/webdev.png";
+
+import webdevImg1 from "/src/assets/image/dev1.png";
+import webdevImg2 from "/src/assets/image/dev2.png";
+import webdevImg3 from "/src/assets/image/dev3.png";
+import webdevImg4 from "/src/assets/image/dev4.png";
+import webdevImg5 from "/src/assets/image/dev5.png";
+import webdevImg6 from "/src/assets/image/dev6.png";
+
 const Web_Development = () => {
   return (
     <div className="WebDev container-fluid p-0">
-      <img src="/src/assets/image/webdev.png" alt="" />
+      <img src={webdevImg} alt="" />
       <h1 data-aos="fade-up">WEBSITE DEVELOPMENT</h1>
       <p data-aos="fade-up">
         Approximately 85% of people use the Internet to discover local
@@ -52,10 +61,10 @@ const Web_Development = () => {
             </p>
           </div>
           <div className="col-lg-5">
-            <img src="/src/assets/image/dev1.png" alt="" data-aos="fade-down" />
+            <img src={webdevImg1} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-5">
-            <img src="/src/assets/image/dev2.png" alt="" data-aos="fade-down" />
+            <img src={webdevImg2} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-7" data-aos="fade-up">
             <h1>Support & Maintenance</h1>
@@ -93,10 +102,10 @@ const Web_Development = () => {
             </p>
           </div>
           <div className="col-lg-5">
-            <img src="/src/assets/image/dev3.png" alt="" data-aos="fade-down" />
+            <img src={webdevImg3} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-5">
-            <img src="/src/assets/image/dev4.png" alt="" data-aos="fade-down" />
+            <img src={webdevImg4} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-7" data-aos="fade-up">
             <h1>Brand and Business Awareness</h1>
@@ -150,10 +159,10 @@ const Web_Development = () => {
           </div>
           <div className="col-lg-5">
             {" "}
-            <img src="/src/assets/image/dev5.png" alt="" data-aos="fade-down" />
+            <img src={webdevImg5} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-5">
-            <img src="/src/assets/image/dev6.png" alt="" data-aos="fade-down" />
+            <img src={webdevImg6} alt="" data-aos="fade-down" />
           </div>
           <div className="col-lg-7" data-aos="fade-up">
             <h1>Client Satisfaction</h1>

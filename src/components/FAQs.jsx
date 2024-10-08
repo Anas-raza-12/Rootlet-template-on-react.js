@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ClipLoader from "react-spinners/ClipLoader";
-
+import FAQsImg from "/src/assets/image/faqs.png";
+ 
 const FAQs = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -119,7 +120,7 @@ const FAQs = () => {
 
   return (
     <div className="container-fluid p-0 FAQs">
-      <img width={"100%"} src="/src/assets/image/faqs.png" alt="FAQs" />
+      <img width={"100%"} src={FAQsImg} alt="FAQs" />
       <div className="ui-accordion ui-accordion--outlined container" style={{ width: "80%", maxWidth: "100%" }}>
         <h1>FAQs</h1>
         {faqData.map((faq, index) => (

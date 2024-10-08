@@ -3,13 +3,17 @@ import axios from "axios";
 import BeatLoader from "react-spinners/BeatLoader";
 import ClipLoader from "react-spinners/ClipLoader";
 
+import HeadOffice from "/src/assets/image/it-icon1.png";
+import PhoneImg from "/src/assets/image/phone-call.png";
+import Email from "/src/assets/image/email.png";
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     email: "",
     subject: "",
-    message: ""
+    message: "",
   });
   const [formSubmitting, setFormSubmitting] = useState(false);
   const [result, setResult] = useState("");
@@ -20,7 +24,7 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -37,7 +41,7 @@ const Contact = () => {
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        body: formDataObj
+        body: formDataObj,
       });
 
       const data = await response.json();
@@ -49,7 +53,7 @@ const Contact = () => {
           phone: "",
           email: "",
           subject: "",
-          message: ""
+          message: "",
         });
       } else {
         setResult(data.message);
@@ -70,10 +74,16 @@ const Contact = () => {
           width: "100vw",
           display: "flex",
           justifyContent: "center",
-          alignItems: "center"
+          alignItems: "center",
         }}
       >
-        <ClipLoader color="#000000" loading={loading} size={100} aria-label="Loading Spinner" data-testid="loader" />
+        <ClipLoader
+          color="#000000"
+          loading={loading}
+          size={100}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
       </div>
     );
   }
@@ -85,7 +95,7 @@ const Contact = () => {
           height: "100vh",
           display: "flex",
           justifyContent: "center",
-          alignItems: "center"
+          alignItems: "center",
         }}
       >
         <p style={{ color: "red" }}>{error}</p>
@@ -97,17 +107,23 @@ const Contact = () => {
     <div style={{ marginTop: "13vh" }} className="container-fluid p-0 contact">
       {formSubmitting ? (
         <div className="text-center">
-          <BeatLoader color="#000000" loading={formSubmitting} size={15} aria-label="Loading Spinner" data-testid="loader" />
+          <BeatLoader
+            color="#000000"
+            loading={formSubmitting}
+            size={15}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
         </div>
       ) : (
         <>
           <div className="row">
-          <div
+            <div
               style={{ backgroundColor: "#212529" }}
               className="col-lg-5 col-md-12 contact-info"
             >
               <div data-aos="fade-up" className="d-flex contact-item">
-                <img src="/src/assets/image/it-icon1.png" alt="Head Office" />
+                <img src={HeadOffice} alt="Head Office" />
                 <div style={{ color: "white" }}>
                   <h1>Head Office Address</h1>
                   <h3>
@@ -116,14 +132,14 @@ const Contact = () => {
                 </div>
               </div>
               <div data-aos="fade-up" className="d-flex contact-item">
-                <img src="/src/assets/image/phone-call.png" alt="Phone" />
+                <img src={PhoneImg} alt="Phone" />
                 <div style={{ color: "white" }}>
                   <h1>Reach us at</h1>
                   <h3>+1 424 382 0299</h3>
                 </div>
               </div>
               <div data-aos="fade-up" className="d-flex contact-item">
-                <img src="/src/assets/image/it-icon1.png" alt="Regional Office" />
+                <img src={HeadOffice} alt="Regional Office" />
                 <div style={{ color: "white" }}>
                   <h1>Regional Office Address</h1>
                   <h3>
@@ -134,7 +150,7 @@ const Contact = () => {
                 </div>
               </div>
               <div data-aos="fade-up" className="d-flex contact-item">
-                <img src="/src/assets/image/phone-call.png" alt="Phone" />
+                <img src={PhoneImg} alt="Phone" />
                 <div style={{ color: "white" }}>
                   <h1>Reach us at</h1>
                   <h3>
@@ -144,7 +160,7 @@ const Contact = () => {
               </div>
               <hr data-aos="fade-right" style={{ color: "white" }} />
               <div data-aos="fade-up" className="d-flex contact-item">
-                <img src="/src/assets/image/email.png" alt="Email" />
+                <img src={Email} alt="Email" />
                 <div style={{ color: "white" }}>
                   <h1>Email</h1>
                   <h3>
@@ -162,7 +178,7 @@ const Contact = () => {
             {/* Map Section */}
             <div className="col-lg-7 col-md-12">
               <div className="map-container">
-              <iframe
+                <iframe
                   data-aos="fade-down"
                   width="100%"
                   height="600"
@@ -191,7 +207,8 @@ const Contact = () => {
             <h3 className="text-center">GET IN TOUCH</h3>
             <h1 className="text-center">How Can We Help?</h1>
             <p className="text-center">
-              Contact us to request a quote or to schedule a consultation with our team.
+              Contact us to request a quote or to schedule a consultation with
+              our team.
             </p>
 
             <div className="row">
@@ -225,7 +242,8 @@ const Contact = () => {
                 />
                 <input
                   className="col-lg-6 col-md-10 col-sm-10"
-                  type="text" name="" 
+                  type="text"
+                  name=""
                   value={formData.subject}
                   onChange={handleChange}
                   placeholder="Subject"
