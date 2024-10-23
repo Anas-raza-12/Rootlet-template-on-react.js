@@ -73,7 +73,7 @@ const Blog = () => {
     return (
       <div style={{height:'100vh', justifyContent:'center',alignItems:'center'}} className="container Blog  d-flex">
         <ClipLoader
-          color="#000000" // Ensure color is a valid string
+          color="#000000" 
           loading={loading}
           size={100}
           aria-label="Loading Spinner"
